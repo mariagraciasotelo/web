@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Evita el scroll */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alex-brush-regular {
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: aliceblue;
+  font-size:90px;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ocupa toda la altura de la vista */
+  overflow: hidden; /* Asegura que el contenido extra no desborde */
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+  z-index: -1; /* Envía la imagen al fondo */
+  
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el contenido vertical y horizontalmente */
+  text-align: center;
+  z-index: 1; /* Asegura que la superposición esté por encima de la imagen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Espacio entre los botones */
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #ffffff00; /* Color del botón */
+  color: white; /* Color del texto del botón */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  transition: background-color 0.3s; /* Transición de color */
+  border-radius: 60px;
+  border: 4px solid #FFFFFF;
+  font-size: 40px;
+}
+
+.button:hover {
+  background-color: #f9f9f998; /* Cambio de color al pasar el cursor */
+}
+
+
+
+.container-unique {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ocupa toda la altura de la vista */
+  overflow: hidden; /* Asegura que el contenido extra no desborde */
+}
+
+.bg-image-unique {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+  z-index: -1; /* Envía la imagen al fondo */
+}
+
+.overlay-unique {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el contenido vertical y horizontalmente */
+  text-align: center;
+  z-index: 1; /* Asegura que la superposición esté por encima de la imagen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Espacio entre los botones */
+  color: white; /* Asegura que el texto sea visible */
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor visibilidad */
+  padding: 20px; /* Espacio alrededor del contenido */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.button-unique {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #fffefb5f; /* Color del botón */
+  color: white; /* Color del texto del botón */
+  width: 150px; /* Asegura que el botón ocupe todo el ancho del contenedor */
+  max-width: 200px; /* Ancho máximo del botón */
+  text-align: center; /* Alinea el texto del botón al centro */
+}
+
+.button-unique:hover {
+  background-color: #ffffff61; /* Cambio de color al pasar el cursor */
+}
+/* stilos de actores  */
+
+.contenedor_actores{
+  width: 50%;
+  height: auto;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: auto;
+
+}
